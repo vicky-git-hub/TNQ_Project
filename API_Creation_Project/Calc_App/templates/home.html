@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <link href="{% static 'css/home.css'%}" rel="stylesheet" />
+</head>
+<body>
+    <h1 class="heading">TNQ Technologies Django Project</h1>
+    <br/>
+
+<form action="JSON_view" method="post">
+    {% csrf_token %}
+
+	 Enter the value of A :  <input type="number" name="inputA">
+    <br/>
+    <br/>
+    Enter the value of B :  <input type="number" name="inputB">
+    <br/>
+    <br/>
+	<input type="submit">
+</form>
+</body>
+</html>
