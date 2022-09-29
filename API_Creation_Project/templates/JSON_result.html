@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>JSON_Response</title>
+    <link rel="stylesheet" href="{% static 'css/JSON_result.css' %}" >
+</head>
+<body>
+    <h1 class="h1">JSON Response Page</h1>
+    <br/>
+    <br/>
+    <form method="post" >
+        {% csrf_token %}
+
+        RESULT = {{ Result }}
+
+        <br/>
+        <br/>
+        <h2>Record Saved Successful in the Database...</h2>
+    </form>
+</body>
+</html>
